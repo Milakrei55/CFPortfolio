@@ -1,0 +1,222 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body {
+  background: rgb(26, 26, 26);
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-family: 'Syne', sans-serif;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgba(255, 255, 255, 1);
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgba(255, 255, 255, 1);
+}
+
+.button,
+button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: rgba(0, 0, 255, 1);
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 25px;
+  transition: opacity 0.2s;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.navigation-list__item--active {
+  text-decoration: underline;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.profile {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+  max-height: 50px;
+  height: auto;
+  width: auto;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+/* Grid and Wrapper */
+
+.work-wrapper {
+  width: 100%;
+  max-width: 1600px;
+  /* 3 * 500px + gaps */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.grid__item {
+  background-color: rgba(0, 0, 255, 1);
+  padding: 15px;
+  height: 800px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+
+@media all and (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .grid__item {
+    height: auto;
+    /* Optional */
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    gap: 10px;
+  }
+
+  .grid__item {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
+/* Temp Berlin city animation */
+
+@keyframes color-change {
+
+  0%,
+  50% {
+    fill: rgba(0, 0, 255, 1);
+  }
+
+  100% {
+    fill: rgba(255, 0, 255, 1);
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}

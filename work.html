@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Michaela's Portfolio</title>
+  <link rel="shortcut icon" href="./img/milafavicon.ico">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Syne:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <a href="index.html"><img src="./img/logo.png" class="page-header__item"
+        alt="Personal logo of Michaela Kreissl, a cat shape"></a>
+    <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+<section>
+  <div class="work-wrapper">
+    <h1>Work</h1>
+    <div class="grid">
+      <!-- Grid items -->
+      <div class="grid__item">
+        <h2>myFlix Angular App</h2>
+        <img src="./img/cover2-angularapp.jpg" alt="project1" style="width: 400px;">
+        <p>
+          The myFlix Angular App is a single-page, responsive movie application built using Angular. It serves as the
+          client-side
+          interface for the myFlix movie app, interacting with the existing server-side code and database through REST
+          API
+          endpoints. Technologies and techniques used:
+        <ul>
+          <li>Angular</li>
+          <li>TypeScript</li>
+          <li>Angular Material</li>
+          <li>REST API Integration (using Angular HttpClient)</li>
+        </ul>
+        </p>
+        <a href="https://milakrei55.github.io/CFAngularMyFlix/welcome" target="_blank">🔗 See project live</a><br>
+        <a href="https://github.com/Milakrei55/CFAngularMyFlix" target="_blank">🔗 See project on GitHub</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>Chat Mobile App</h2>
+        <img src="./img/cover1-chatapp.jpg" alt="project1" style="width: 400px;">
+        <p>
+          A mobile chat application built with React Native and Expo, offering real-time chat, image sharing, and
+          location sharing
+          features. This app provides an accessible chat interface for users to communicate with friends and family.
+          Technologies and techniques used:
+        <ul>
+          <li>React Native</li>
+          <li>Expo</li>
+          <li>Google Firebase, Cloud Firestore</li>
+          <li>React Native's AsyncStorage</li>
+          <li>Gifted Chat Library</li>
+        </ul>
+        </p>
+        <a href="https://github.com/Milakrei55/CFChat" target="_blank">🔗 See project on GitHub</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>Meet App</h2>
+        <img src="./img/cover3-meetapp.jpg" alt="project1" style="width: 400px;">
+        <p>
+          Meet App is a serverless, progressive web application (PWA) built with React, following a test-driven
+          development (TDD)
+          approach. The app utilizes the Google Calendar API to fetch upcoming events and offers various features for
+          users to
+          explore and manage events. Technologies and techniques used:
+        <ul>
+          <li>React</li>
+          <li>AWS Lambda (serverless computing service)</li>
+          <li>Google Calendar API, OAuth2</li>
+          <li>Create-React-App (or “CRA”)</li>
+          <li>Test-Driven Development (TDD), Behavior-Driven Development (BDD) (Gherkin syntax, Cucumber's
+            Jest-integrated version
+            "jest-cucumber")</li>
+          <li>Unit Testing, Integration Testing, End-to-End Testing (using Puppeteer)</li>
+          <li>Data Visualization (Recharts)</li>
+        </ul>
+        </p>
+        <a href="https://cf-meet-three.vercel.app/" target="_blank">🔗 See project live</a><br>
+        <a href="https://github.com/Milakrei55/CFMeet" target="_blank">🔗 See project on GitHub</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>myFlix React App</h2>
+        <img src="./img/cover4-myflix.jpg" alt="project1" style="width: 400px;">
+        <p>
+This client-side application is crafted to complement the server-side code (REST API and database) developed in the
+previous movie API project, forming the integral components of the myFlix web application. Representing the
+seamless integration of server-side functionality with a dynamic and responsive client-side interface, this project
+showcases the mastery of full-stack JavaScript technologies within the MERN stack (MongoDB, Express, React, and
+Node.js). Users can explore movie details, create profiles, and curate their favorite film collection. Technologies and techniques used:
+        <ul>
+          <li>React</li>
+          <li>React Router</li>
+          <li>React Bootstrap</li>
+          <li>Parcel</li>
+          <li>React Redux</li>
+        </ul>
+        </p>
+        <a href="https://cfmyflixmk.netlify.app/login" target="_blank">🔗 See project live</a><br>
+        <a href="https://github.com/Milakrei55/CFMyflix" target="_blank">🔗 See project on GitHub</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>API for myFlix movie app</h2>
+        <img src="./img/cover6-api.jpg" alt="project1" style="width: 400px;">
+        <p>
+This API (Application Programming Interface) is the server-side component of the myFlix web application, which serves as
+the backend for managing and providing access to information about different movies, directors, and genres. Users can
+create profiles, save their favorite movies, and more. The actual storage of data is managed by a database, and this
+component handles the retrieval and processing of that data. Technologies and techniques used:
+        <ul>
+          <li>Node.js and Express</li>
+          <li>MongoDB and Mongoose</li>
+          <li>REST Architecture</li>
+          <li>Middleware Modules (body-parser, morgan)</li>
+          <li>User Authentication and Authorization</li>
+          <li>Data Validation Logic</li>
+          <li>Postman</li>
+        </ul>
+        </p>
+        <a href="https://github.com/Milakrei55/movie_api" target="_blank">🔗 See project on GitHub</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>Pokédex App</h2>
+        <img src="./img/cover5-pokedex.jpg" alt="project1" style="width: 400px;">
+        <p>
+          The "Pokédex" is a small web application with HTML, CSS, and JavaScript that loads data from an external API and enables
+          the viewing of data points in detail. The app displays a list of Pokemon, clicking on which opens a window with some
+          detailed information about them, as well as an image of a pokemon. Technologies and techniques used:
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Ajax to fetch data asynchronously from an external API (Pokémon API)</li>
+          <li>Test-Driven Development (TDD), Behavior-Driven Development (BDD) (Gherkin syntax, Cucumber's
+            Jest-integrated version
+            "jest-cucumber")</li>
+          <li>Bootstrap (CSS Framework)</li>
+          <li>jQuery</li>
+        </ul>
+        </p>
+        <a href="https://milakrei55.github.io/pokedex-app/" target="_blank">🔗 See project live</a><br>
+        <a href="https://github.com/Milakrei55/pokedex-app" target="_blank">🔗 See project on GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="https://github.com/Milakrei55" target="_blank"><img src="./img/github_icon.svg" alt="Github"></a>
+      <a href="https://medium.com/@mischakom" target="_blank"><img src="./img/medium_icon.svg" alt="Medium"></a>
+      <a href="https://www.linkedin.com/in/michaela-kreissl/" target="_blank"><img src="./img/linkedin_icon.svg"
+          alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script src="js/tota11y.min.js"></script>
+
+</body>
+
+</html>
